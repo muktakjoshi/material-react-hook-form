@@ -3,6 +3,7 @@ import { Button } from "@material-ui/core";
 import TextField from "./components/TextField";
 import Select from "./components/Select";
 import RadioGroup from "./components/RadioGroup";
+import CheckboxGroup from "./components/CheckboxGroup";
 
 function MyForm() {
   return (
@@ -45,6 +46,22 @@ function MyForm() {
         items={[
           { name: "Male", value: "male" },
           { name: "Female", value: "female" },
+        ]}
+      />
+
+      <br />
+      <br />
+
+      <CheckboxGroup
+        name="hobbies"
+        label="Hobbies"
+        rules={{ required: "Required!" }}
+        items={[
+          { name: "Singing", value: "singing" },
+          { name: "Dancing", value: "dancing" },
+          { name: "Cooking", value: "cooking" },
+          { name: "Reading", value: "reading" },
+          { name: "Coding", value: "coding" },
         ]}
       />
 

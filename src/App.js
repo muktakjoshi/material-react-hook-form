@@ -4,7 +4,13 @@ import { useForm, FormProvider } from "react-hook-form";
 
 function App() {
   const form = useForm({
-    defaultValues: { firstName: "", lastName: "", age: "" },
+    defaultValues: {
+      firstName: "",
+      lastName: "",
+      age: "",
+      gender: "male",
+      hobbies: ["cooking", "coding"],
+    },
   });
 
   const onSubmit = (data) => console.log(data);
