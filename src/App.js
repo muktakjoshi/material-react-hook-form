@@ -3,7 +3,9 @@ import MyForm from "./MyForm";
 import { useForm, FormProvider } from "react-hook-form";
 
 function App() {
-  const form = useForm({ defaultValues: { firstName: "", lastName: "" } });
+  const form = useForm({
+    defaultValues: { firstName: "", lastName: "", age: "" },
+  });
 
   const onSubmit = (data) => console.log(data);
   const onError = (error) => console.log(error);
